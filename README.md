@@ -11,6 +11,12 @@
 
 [![Download Latest Release](https://img.shields.io/badge/Download-Latest-blue?style=for-the-badge)](https://github.com/andreasVelo/es1-worklife-agent/releases/latest/download/es1-worklife-agent-setup.exe)
 
+![Latest Release](https://img.shields.io/github/v/release/andreasVelo/es1-worklife-agent?label=Latest%20Version&style=for-the-badge)
+
+[![Download Latest Release](https://img.shields.io/badge/Download-Latest-blue?style=for-the-badge)](https://github.com/andreasVelo/es1-worklife-agent/releases/latest/download/es1-worklife-agent-setup.exe)
+
+
+
 ## Latest Release Notes
 
 - Initial release of ES1 Worklife Agent
@@ -29,3 +35,21 @@
 - Feature 1: Description
 - Feature 2: Description
 - Bug fixes and improvements
+
+- # ES1 Worklife Agent
+
+![Latest Release](https://img.shields.io/github/v/release/andreasVelo/es1-worklife-agent?label=Latest%20Version&style=for-the-badge)
+
+[![Download Latest Release](https://img.shields.io/badge/Download-Latest-blue?style=for-the-badge)](https://github.com/andreasVelo/es1-worklife-agent/releases/latest/download/es1-worklife-agent-setup.exe)
+
+## Latest Release Notes
+
+- Initial release of ES1 Worklife Agent
+- Features and bug fixes
+
+## Version History
+
+| Version | Release Date | Notes | Download |
+|---------|-------------|-------|---------|
+| v1.0.0 | 2025-11-24  | Initial release | [Download](https://github.com/andreasVelo/es1-worklife-agent/releases/download/v1.0.0/es1-worklife-agent-setup.exe) |
+
