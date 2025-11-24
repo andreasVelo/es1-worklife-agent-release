@@ -12,3 +12,8 @@
 | v1.1.0 | 2025-11-24  | Added new features and bug fixes | [Download](https://github.com/<username>/<repo>/releases/download/v1.1.0/MyAppSetup.exe) |
 | v1.0.0 | 2025-11-20  | Initial release | [Download](https://github.com/<username>/<repo>/releases/download/v1.0.0/MyAppSetup.exe) |
 
+## Latest Release Notes (v1.1.0)
+
+- Feature 1: Description
+- Feature 2: Description
+- Bug fixes and improvements
