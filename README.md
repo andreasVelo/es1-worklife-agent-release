@@ -1,6 +1,6 @@
 
 ## Latest Release Notes (v1.1.0)
-[Download Latest Release](https://github.com/<username>/<repository>/releases/latest/download/<asset-name>)
+[Download Latest Release](https://github.com/andreasvelo/es1-worklife-agent/releases/latest/download/MyApp1-setup.exe)
 
 
 - Feature 1: Description
