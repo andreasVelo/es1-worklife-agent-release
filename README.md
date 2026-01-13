@@ -28,7 +28,7 @@ The default installation folder is [Program Files]\ES1WorklifeAgent
 - Go to Cloud Server
 - Enter the IP of the machine where the agent is installed
 - Enter 8081 for port
-- Use HTTP
+- Use HTTP (Https is not supported yet)
 
 >**View Device Information**
 
@@ -65,6 +65,9 @@ The device now is ready to receive attendance events and forward the events to t
 Note: Most top-level commands expose subcommands or flags; run the command with `--help` to see available options (for example `job --help` or `devices --help`).
 
 ---
+
+## Device State and Statuses
+
 >Device Status
 
 | Status | Description |
@@ -73,6 +76,7 @@ Note: Most top-level commands expose subcommands or flags; run the command with 
 | Offline | The device is not reachable on the network or turned off |
 | Error | The device reported an error or failed to respond; check logs |
 
+Note: The device status is read-only
 ---
  >Connection State (HCM)
 
@@ -82,4 +86,6 @@ Note: Most top-level commands expose subcommands or flags; run the command with 
 | Inactive | Not registered or not currently connected to the backoffice HCM |
 | Suspended | Registration/communication is paused for maintenance or administrative hold |
 | Test | Registered in test mode |
+
+Note: The device state defines the connection status with the HCM System. You can change the state to Active once the device is registered to the HCM sytem by using the cli command: devices --state <index> where <index> is the number of the connected device.
 
