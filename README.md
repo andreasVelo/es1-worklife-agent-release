@@ -1,8 +1,6 @@
-
 ## Latest Release Notes [Rel Notes](https://github.com/andreasVelo/es1-worklife-agent/releases/latest)
 
 [![Download Latest](https://img.shields.io/badge/Download-Latest-blue?style=for-the-badge)](https://github.com/andreasvelo/es1-worklife-agent/releases/latest/download/es1worklifeagent-setup.exe)
-
 
 # ES1 WorkLife Agent
 
@@ -11,6 +9,16 @@
 ES1 WorkLife Agent is a background windows service that schedules and runs workplace integration tasks (attendance sync, device polling, and small automation jobs).
 
 ### Quick Start Guide
+
+>PreRequisites
+
+- **System Requirements:**
+  - Windows 10 or later (or Windows Server 2016 and later)
+  - 4 GB minimum RAM
+  - 500 MB minimum disk space
+  - Administrator privileges for installation
+
+- [Firewall Configuration](#firewall-configuration)
 
 >Installation
 
@@ -33,7 +41,7 @@ The default installation folder is [Program Files]\ES1WorklifeAgent
 >**View Device Information**
 
 - Open the ES1.Worklife.Cli.exe with administrative rights from the installation folder
-- type  __devices --info__ and press enter. The connected devices will be returned.
+- type  _devices_ --info__ and press enter. The connected devices will be returned.
 
 >**Register a Device**
 
@@ -71,7 +79,7 @@ Note: Most top-level commands expose subcommands or flags; run the command with 
 >Device Status
 
 | Status | Description |
-|:---|:---|
+| :--- | :--- |
 | Online | The device is reachable and responding to requests |
 | Offline | The device is not reachable on the network or turned off |
 | Error | The device reported an error or failed to respond; check logs |
@@ -81,11 +89,21 @@ Note: The device status is read-only
  >Connection State (HCM)
 
 | State | Description |
-|:---|:---|
+| :--- | :--- |
 | Active | Registered with the backoffice HCM and actively exchanging data |
 | Inactive | Not registered or not currently connected to the backoffice HCM |
 | Suspended | Registration/communication is paused for maintenance or administrative hold |
 | Test | Registered in test mode |
 
-Note: The device state defines the connection status with the HCM System. You can change the state to Active once the device is registered to the HCM sytem by using the cli command: devices --state `<index>` where `<index>` is the number of the connected device.
+Note: The device state defines the connection status with the HCM System. You can change the state to Active once the device is registered to the HCM sytem by using the cli 
 
+---
+
+## Firewall Configuration
+
+To ensure proper communication between the ES1 Worklife Agent and connected devices, the following ports must be open in your firewall:
+
+| Port | Service | Protocol | Direction | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| 8081 | ES1 Worklife Agent (Cloud Server) | HTTP/TCP | Inbound | Allows ZKTeco devices to connect to the agent and transmit attendance events |
+| 4370 | ZKTeco Device Communication | TCP/UDP | Outbound | Allows the agent to communicate with ZKTeco devices for polling and data synchronization |
