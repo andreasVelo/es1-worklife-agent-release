@@ -110,8 +110,8 @@ To ensure proper communication between the ES1 Worklife Agent and connected devi
 
 ## Troubleshooting
 
-1. ZKTECO cloxk is not registered to Agent
+1. ZKTECO clock is not registered to the Agent
 
-   Check tha no other appication is using the port 8081
+   Check that no other appication is using the port 8081
    netstat -aon | findstr :8081
    tasklist /FI "PID eq <PID>"
