@@ -107,3 +107,11 @@ To ensure proper communication between the ES1 Worklife Agent and connected devi
 | :--- | :--- | :--- | :--- | :--- |
 | 8081 | ES1 Worklife Agent (Cloud Server) | HTTP/TCP | Inbound | Allows ZKTeco devices to connect to the agent and transmit attendance events |
 | 4370 | ZKTeco Device Communication | TCP/UDP | Outbound | Allows the agent to communicate with ZKTeco devices for polling and data synchronization |
+
+## Troubleshooting
+
+1. ZKTECO cloxk is not registered to Agent
+
+   Check tha no other appication is using the port 8081
+   netstat -aon | findstr :8081
+   tasklist /FI "PID eq <PID>"
